@@ -1,0 +1,87 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"airbnb",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": [
+      "tsconfig.json"
+    ],
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"react-hooks",
+    "eslint-plugin-import",
+    "prettier"
+	],
+	"rules": {
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": ["error"],
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/no-unused-vars": "off",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"react/jsx-filename-extension": [
+			"warn",
+			{
+				"extensions": [
+					".jsx",
+					".tsx"
+				]
+			}
+		],
+		"import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+		],
+		"react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-unescaped-entities": 0,
+    "jsx-a11y/label-has-associated-control": [
+			"error", {
+				"required": {
+					"some": [
+						"nesting",
+						"id"
+					]
+				}
+			}
+		],
+		"jsx-a11y/label-has-for": [
+			"error", {
+				"required": {
+					"some": [
+						"nesting",
+						"id"
+					]
+				}
+			}
+		]
+	},
+	"settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
