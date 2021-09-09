@@ -2,26 +2,26 @@ import styled from 'styled-components';
 import git from '../../assets/image/svg/github.svg';
 import course from '../../assets/image/svg/rss.svg';
 
-const FooterBlock = styled.footer`
+export const FooterBlock = styled.footer`
   width: 100%;
   height: 70px;
   padding: 10px 0;
   background-color: #2b3a67;
 `;
 
-const FooterWrapper = styled.div`
+export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
 
-const FooterNavDevelopers = styled.nav`
+export const FooterNavDevelopers = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #b6bfc7;
 `;
 
-const FooterGitHubIcon = styled.span`
+export const FooterGitHubIcon = styled.span`
   display: block;
   width: 45px;
   height: 45px;
@@ -32,7 +32,7 @@ const FooterGitHubIcon = styled.span`
   background-position: center;
 `;
 
-const FooterLogoCourse = styled.a`
+export const FooterLogoCourse = styled.a`
   display: block;
   position: relative;
   width: 86px;
@@ -45,7 +45,7 @@ const FooterLogoCourse = styled.a`
   padding-right: 111px;
 `;
 
-const RSSYear = styled.span`
+export const RSSYear = styled.span`
   position: absolute;
   bottom: 0;
   right: 0;
@@ -56,4 +56,6 @@ const RSSYear = styled.span`
   font-weight: 700;
 `;
 
-export { FooterBlock, FooterWrapper, FooterNavDevelopers, FooterGitHubIcon, FooterLogoCourse, RSSYear };
+export const FooterLink = styled.a`
+  margin-right: 10px;
+`;

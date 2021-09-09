@@ -1,18 +1,7 @@
 import styled from 'styled-components';
-import { IStyles } from '../../../model/types';
+import gameLogo from '../../assets/image/img/game-logo.png';
 
-import gameLogo from '../../../assets/image/img/game-logo.png';
-
-const UnauthorizedContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 130px 26px 232px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-`;
-
-const GameLogo = styled.div`
+export const GameLogo = styled.div`
   width: 550.09px;
   height: 149px;
   margin: 0 auto 40px;
@@ -22,7 +11,16 @@ const GameLogo = styled.div`
   background-position: center;
 `;
 
-const UnauthorizedBlock = styled.div`
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 130px 26px 232px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
+
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 515px;
@@ -38,7 +36,12 @@ const UnauthorizedBlock = styled.div`
   }
 `;
 
-const UnauthorizedBlockTitle = styled.span<IStyles>`
+type BlockTitleType = {
+  marginBottom?: string;
+  textAlign?: string;
+};
+
+export const BlockTitle = styled.span<BlockTitleType>`
   display: inline-block;
   font-weight: 700;
   font-size: 48px;
@@ -48,4 +51,7 @@ const UnauthorizedBlockTitle = styled.span<IStyles>`
   text-align: ${({ textAlign }) => textAlign};
 `;
 
-export { UnauthorizedContainer, GameLogo, UnauthorizedBlock, UnauthorizedBlockTitle };
+BlockTitle.defaultProps = {
+  marginBottom: '0',
+  textAlign: 'left'
+};

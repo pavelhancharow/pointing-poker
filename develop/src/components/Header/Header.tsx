@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import { Container } from '@material-ui/core';
 import { HeaderBlock, Logo } from './style';
 
-const Header: React.FC = () => {
+export const Header: FC = (): JSX.Element => {
   return (
     <HeaderBlock>
       <Container>
@@ -11,5 +11,3 @@ const Header: React.FC = () => {
     </HeaderBlock>
   );
 };
-
-export default Header;

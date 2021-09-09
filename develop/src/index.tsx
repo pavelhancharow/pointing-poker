@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './component/App/index';
+import { App } from './App/App';
 
-import GlobalStyle from './style';
+import GlobalStyle from './shared/GlobalStyle';
 
 ReactDOM.render(
   <>
