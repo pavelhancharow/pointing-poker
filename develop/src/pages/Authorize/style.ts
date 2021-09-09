@@ -25,15 +25,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 515px;
   margin-bottom: 6px;
-
-  .description {
-    line-height: 28px;
-
-    &-bold {
-      font-weight: 700;
-      color: #66999b;
-    }
-  }
 `;
 
 type BlockTitleType = {
@@ -54,4 +45,40 @@ export const BlockTitle = styled.span<BlockTitleType>`
 BlockTitle.defaultProps = {
   marginBottom: '0',
   textAlign: 'left'
+};
+
+type DescriptionType = {
+  marginBottom?: string;
+  fontWeight?: string;
+  color?: string;
+};
+
+export const Description = styled.span<DescriptionType>`
+  margin-bottom: ${({ marginBottom }) => marginBottom};
+  line-height: 28px;
+  font-weight: ${({ fontWeight }) => fontWeight};
+  color: ${({ color }) => color};
+`;
+
+Description.defaultProps = {
+  marginBottom: '0',
+  fontWeight: 'inherit',
+  color: 'inherit'
+};
+
+type FlexBoxType = {
+  alignItems?: string;
+  justifyContent?: string;
+};
+
+export const FlexBox = styled.span<FlexBoxType>`
+  display: flex;
+  width: inherit;
+  align-items: ${({ alignItems }) => alignItems};
+  justify-content: ${({ justifyContent }) => justifyContent};
+`;
+
+FlexBox.defaultProps = {
+  alignItems: 'normal',
+  justifyContent: 'start'
 };

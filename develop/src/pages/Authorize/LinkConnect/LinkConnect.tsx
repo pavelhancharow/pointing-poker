@@ -1,7 +1,7 @@
 import { FC } from 'react';
+import { BlockTitle, Description, FlexBox, Wrapper } from '../style';
 import { Button } from '../../../shared/Button';
 import { Input } from '../../../shared/Input';
-import { BlockTitle, Wrapper } from '../style';
 
 export const LinkConnect: FC = (): JSX.Element => {
   return (
@@ -9,15 +9,19 @@ export const LinkConnect: FC = (): JSX.Element => {
       <BlockTitle marginBottom="31px" textAlign="center">
         OR:
       </BlockTitle>
-      <span className="description" style={{ marginBottom: '15px' }}>
-        Connect to lobby by <span className="description-bold">URL</span>:
-      </span>
-      <div style={{ display: 'flex', width: 'inherit' }}>
+      <Description marginBottom="15px">
+        Connect to lobby by{' '}
+        <Description fontWeight="700" color="#66999b">
+          URL
+        </Description>
+        :
+      </Description>
+      <FlexBox>
         <Input type="text" />
         <Button borderRadius="0px 3px 3px 0px" padding="7px 65px">
           Connect
         </Button>
-      </div>
+      </FlexBox>
     </Wrapper>
   );
 };

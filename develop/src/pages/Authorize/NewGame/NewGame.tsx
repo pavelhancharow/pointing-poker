@@ -1,15 +1,15 @@
 import { FC } from 'react';
+import { BlockTitle, Description, FlexBox, Wrapper } from '../style';
 import { Button } from '../../../shared/Button';
-import { BlockTitle, Wrapper } from '../style';
 
 export const NewGame: FC = (): JSX.Element => {
   return (
     <Wrapper>
       <BlockTitle marginBottom="66px">Start your planning:</BlockTitle>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <span className="description">Create session:</span>
+      <FlexBox alignItems="center" justifyContent="space-between">
+        <Description>Create session:</Description>
         <Button>Start new game</Button>
-      </div>
+      </FlexBox>
     </Wrapper>
   );
 };
