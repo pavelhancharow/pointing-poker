@@ -94,3 +94,11 @@ export const LabelFile = styled.label<LabelType>`
   cursor: pointer;
   z-index: 1;
 `;
+
+export const Select = styled.select`
+  width: 100%;
+  height: 100%;
+  padding-left: 6px;
+  font-size: 24px;
+  line-height: 28px;
+`;
