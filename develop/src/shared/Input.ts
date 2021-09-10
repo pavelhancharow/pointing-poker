@@ -17,8 +17,8 @@ export const Input = styled.input<InputType>`
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 0px 10px;
 
-  opacity: ${({ opacity }) => opacity};0;
-  visibility: ${({ visibility }) => visibility};hidden;
+  opacity: ${({ opacity }) => opacity};
+  visibility: ${({ visibility }) => visibility};
 
   &:disabled {
     font-family: Roboto;
@@ -27,11 +27,14 @@ export const Input = styled.input<InputType>`
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #000000;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #eeeeee;
     border-right: 0;
+  }
+
+  &::placeholder {
+    color: #000000;
   }
 `;
 
