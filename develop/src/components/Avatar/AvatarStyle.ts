@@ -14,6 +14,7 @@ export const PlayerAvatar = styled.div<PlayerAvatarProps>`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: ${({ imgSrc }) => (imgSrc ? 'none' : 'inset 0 4px 8px rgba(0, 0, 0, 0.2)')};
   border-radius: 50%;
 `;
 
@@ -23,7 +24,6 @@ export const PlayerAvatarInitials = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
   top: 0;
   left: 0;
   width: 100%;
