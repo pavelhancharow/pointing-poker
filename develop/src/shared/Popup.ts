@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FlexBox } from './FlexBox';
 
 type PopUpWrapType = {
   display?: string;
@@ -20,27 +21,10 @@ PopUpWrap.defaultProps = {
   display: 'none'
 };
 
-type PopUpType = {
-  padding?: string;
-};
-
-export const PopUp = styled.div<PopUpType>`
+export const PopUp = styled(FlexBox)`
   position: relative;
   top: 50%;
-  display: flex;
-  flex-direction: column;
-  width: 876px;
-  margin: 0 auto;
-  padding: ${({ padding }) => padding};
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateY(-50%);
-
-  &-header {
-    margin-bottom: 30px;
-  }
 `;
-
-PopUp.defaultProps = {
-  padding: '55px 35px 33px'
-};
