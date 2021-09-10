@@ -1,18 +1,19 @@
 import { FC } from 'react';
-import { Container } from '@material-ui/core';
 
-import { FooterBlock, FooterWrapper } from './style';
+import { FooterBlock } from './style';
 import { FooterLinks } from './FooterLinks';
 import { FooterLogo } from './FooterLogo';
+import { Container } from '../../shared/Container';
+import { FlexBox } from '../../shared/FlexBox';
 
 export const Footer: FC = (): JSX.Element => {
   return (
     <FooterBlock>
       <Container>
-        <FooterWrapper>
+        <FlexBox display="flex" alignItems="center">
           <FooterLinks />
           <FooterLogo />
-        </FooterWrapper>
+        </FlexBox>
       </Container>
     </FooterBlock>
   );

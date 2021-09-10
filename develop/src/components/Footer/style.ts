@@ -1,23 +1,14 @@
 import styled from 'styled-components';
 import git from '../../assets/image/svg/github.svg';
 import course from '../../assets/image/svg/rss.svg';
+import { FlexBox } from '../../shared/FlexBox';
 
 export const FooterBlock = styled.footer`
-  width: 100%;
-  height: 70px;
-  padding: 10px 0;
+  padding: 12px 0;
   background-color: #2b3a67;
 `;
 
-export const FooterWrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const FooterNavDevelopers = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+export const FooterNavDevelopers = styled(FlexBox)`
   color: #b6bfc7;
 `;
 
@@ -30,6 +21,10 @@ export const FooterGitHubIcon = styled.span`
   background-size: 45px;
   background-repeat: no-repeat;
   background-position: center;
+`;
+
+export const FooterLink = styled.a`
+  margin-right: 10px;
 `;
 
 export const FooterLogoCourse = styled.a`
@@ -54,8 +49,4 @@ export const RSSYear = styled.span`
   color: #cbd5de;
   line-height: 0.9;
   font-weight: 700;
-`;
-
-export const FooterLink = styled.a`
-  margin-right: 10px;
 `;

@@ -3,7 +3,7 @@ import { FooterGitHubIcon, FooterLink, FooterNavDevelopers } from '../style';
 
 export const FooterLinks: FC = (): JSX.Element => {
   return (
-    <FooterNavDevelopers>
+    <FooterNavDevelopers display="flex" justifyContent="space-between" alignItems="center">
       <FooterGitHubIcon />
       <FooterLink href="https://github.com/pavelhancharow" target="_blank">
         pavelhancharow
