@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import logo from '../../assets/image/img/logo.png';
 
-const HeaderBlock = styled.header`
+export const HeaderBlock = styled.header`
   position: relative;
   width: 100%;
   height: 70px;
@@ -29,7 +29,7 @@ const HeaderBlock = styled.header`
   }
 `;
 
-const Logo = styled.span`
+export const Logo = styled.span`
   position: relative;
   display: block;
   width: 70px;
@@ -40,5 +40,3 @@ const Logo = styled.span`
   background-position: center;
   z-index: 100;
 `;
-
-export { HeaderBlock, Logo };
