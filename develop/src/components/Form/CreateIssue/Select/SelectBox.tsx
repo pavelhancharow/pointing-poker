@@ -1,0 +1,31 @@
+import { FC } from 'react';
+import { UseFormRegister } from 'react-hook-form';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { FormValuesType } from '..';
+import { FlexBox } from '../../../../shared/FlexBox';
+import { Label, Select } from '../../../../shared/Form';
+import { IconWrap, SelectWrap } from './style';
+
+type SelectBoxType = {
+  register: UseFormRegister<FormValuesType>;
+};
+
+export const SelectBox: FC<SelectBoxType> = ({ register }) => {
+  return (
+    <FlexBox alignItems="center" margin="0 0 47px 0">
+      <Label htmlFor="priority" margin="0 63px 0 0">
+        Priority:
+      </Label>
+      <SelectWrap width="267px" height="45px">
+        <Select id="priority">
+          <option value="female">Low</option>
+          <option value="male">Middle</option>
+          <option value="other">Hight</option>
+        </Select>
+        <IconWrap>
+          <ExpandMoreIcon />
+        </IconWrap>
+      </SelectWrap>
+    </FlexBox>
+  );
+};
