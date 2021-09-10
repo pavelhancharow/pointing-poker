@@ -18,5 +18,3 @@ export const FirstName: FC<FirstNameType> = ({ register }): JSX.Element => {
     </FlexBox>
   );
 };
-
-export default FirstName;
