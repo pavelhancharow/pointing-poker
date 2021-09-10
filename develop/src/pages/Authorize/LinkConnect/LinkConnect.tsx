@@ -18,7 +18,7 @@ export const LinkConnect: FC = (): JSX.Element => {
         :
       </Description>
       <FlexBox width="inherit">
-        <Input type="text" />
+        <Input type="text" borderRightWidth="0" />
         <Button borderRadius="0px 3px 3px 0px" padding="7px 74px">
           Connect
         </Button>
