@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { FlexBox } from '../../../shared/FlexBox';
 import { BlockTitle, Description } from '../style';
-import { Input } from '../../../shared/Input';
 import { Button } from '../../../shared/Button';
+import { Input } from '../../../shared/Form';
 
 export const LinkConnect: FC = (): JSX.Element => {
   return (
-    <FlexBox display="flex" flexDirection="column" width="515px">
+    <FlexBox display="block" width="inherit">
       <BlockTitle marginBottom="31px" textAlign="center">
         OR:
       </BlockTitle>
@@ -19,7 +19,7 @@ export const LinkConnect: FC = (): JSX.Element => {
       </Description>
       <FlexBox width="inherit">
         <Input type="text" />
-        <Button borderRadius="0px 3px 3px 0px" padding="7px 65px">
+        <Button borderRadius="0px 3px 3px 0px" padding="7px 74px">
           Connect
         </Button>
       </FlexBox>
