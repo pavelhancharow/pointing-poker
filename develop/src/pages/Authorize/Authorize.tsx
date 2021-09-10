@@ -3,14 +3,17 @@ import { AuthorizeBox, GameLogo } from './style';
 import { NewGame } from './NewGame';
 import { LinkConnect } from './LinkConnect';
 import { Modal } from './Modal';
+import { FlexBox } from '../../shared/FlexBox';
 
 export const Authorize: FC = (): JSX.Element => {
   return (
     <>
-      <AuthorizeBox display="flex" flexDirection="column" padding="130px 26px 232px">
+      <AuthorizeBox flexDirection="column" padding="130px 26px 232px">
         <GameLogo />
-        <NewGame />
-        <LinkConnect />
+        <FlexBox flexDirection="column" width="515px">
+          <NewGame />
+          <LinkConnect />
+        </FlexBox>
       </AuthorizeBox>
       <Modal />
     </>

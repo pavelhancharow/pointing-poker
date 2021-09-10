@@ -29,10 +29,12 @@ export const ConnectToLobbyForm: FC = (): JSX.Element => {
       <FormTitle marginBottom="30px">Connect to lobby</FormTitle>
       <Observer />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <FirstName register={register} />
-        <LastName register={register} />
-        <Job register={register} />
-        <UserAvatar register={register} />
+        <FlexBox flexDirection="column" width="468px">
+          <FirstName register={register} />
+          <LastName register={register} />
+          <Job register={register} />
+          <UserAvatar register={register} />
+        </FlexBox>
         <FlexBox display="flex" alignItems="center" justifyContent="space-between" margin="97px 0 0 0">
           <Button type="submit">Confirm</Button>
           <Button background="#ffffff" color="#2b3a67">

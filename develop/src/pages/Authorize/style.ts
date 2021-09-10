@@ -19,7 +19,7 @@ type BlockTitleType = {
 };
 
 export const BlockTitle = styled.span<BlockTitleType>`
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
@@ -40,6 +40,7 @@ type DescriptionType = {
 };
 
 export const Description = styled.span<DescriptionType>`
+  display: inline-block;
   margin-bottom: ${({ marginBottom }) => marginBottom};
   line-height: 28px;
   font-weight: ${({ fontWeight }) => fontWeight};

@@ -1,19 +1,20 @@
 import { FC } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import { FormValuesType } from '..';
-import { Input, InputBox } from '../../../../shared/Input';
+import { FlexBox } from '../../../../shared/FlexBox';
+import { Input, Label } from '../../../../shared/Form';
 
 type LastNameType = {
   register: UseFormRegister<FormValuesType>;
 };
 
-export const LastName: FC<LastNameType> = ({ register }) => {
+export const LastName: FC<LastNameType> = ({ register }): JSX.Element => {
   return (
-    <InputBox flexDirection="column" width="468px" margin="0 0 20px 0" marginLabel="0 0 9px 0">
-      <label className="label" htmlFor="last">
+    <FlexBox flexDirection="column" margin="0 0 20px 0">
+      <Label htmlFor="last" margin="0 0 9px 0">
         Your last name (optional):
-      </label>
-      <Input id="last" {...register('lastName')} borderRight="1px solid #2b3a67" />
-    </InputBox>
+      </Label>
+      <Input id="last" {...register('lastName')} height="47px" width="inherit" />
+    </FlexBox>
   );
 };

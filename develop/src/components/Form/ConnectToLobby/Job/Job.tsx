@@ -1,19 +1,20 @@
 import { FC } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import { FormValuesType } from '..';
-import { Input, InputBox } from '../../../../shared/Input';
+import { FlexBox } from '../../../../shared/FlexBox';
+import { Input, Label } from '../../../../shared/Form';
 
 type JobType = {
   register: UseFormRegister<FormValuesType>;
 };
 
-export const Job: FC<JobType> = ({ register }) => {
+export const Job: FC<JobType> = ({ register }): JSX.Element => {
   return (
-    <InputBox flexDirection="column" width="468px" margin="0 0 9px 0" marginLabel="0 0 9px 0">
-      <label className="label" htmlFor="job">
+    <FlexBox flexDirection="column" margin="0 0 9px 0">
+      <Label htmlFor="job" margin="0 0 9px 0">
         Your job position (optional):
-      </label>
-      <Input id="job" {...register('job')} borderRight="1px solid #2b3a67" />
-    </InputBox>
+      </Label>
+      <Input id="job" {...register('job')} height="47px" width="inherit" />
+    </FlexBox>
   );
 };
