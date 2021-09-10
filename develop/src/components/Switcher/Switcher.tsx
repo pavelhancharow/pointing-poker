@@ -5,9 +5,7 @@ type SwitcherProps = {
   onChange: CallableFunction;
 };
 
-export const Switcher: FC<SwitcherProps> = (props): JSX.Element => {
-  const { onChange } = props;
-
+export const Switcher: FC<SwitcherProps> = ({ onChange }): JSX.Element => {
   return (
     <SwitchWrapp>
       <SwitchInput id="switcher" type="checkbox" onChange={(e) => onChange(e.target.checked)} />
