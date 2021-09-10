@@ -28,18 +28,3 @@ Button.defaultProps = {
   background: '#2b3a67',
   borderRadius: '3px'
 };
-
-type ButtonBoxType = {
-  margin?: string;
-};
-
-export const ButtonBox = styled.div<ButtonBoxType>`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: ${({ margin }) => margin};
-`;
-
-ButtonBox.defaultProps = {
-  margin: '0'
-};
