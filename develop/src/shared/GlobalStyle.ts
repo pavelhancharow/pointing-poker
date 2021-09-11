@@ -40,6 +40,14 @@ const GlobalStyle = createGlobalStyle`
     text-overflow: ellipsis;
     outline: none;
   }
+
+  select {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
 `;
 
 export default GlobalStyle;
