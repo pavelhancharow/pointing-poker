@@ -4,6 +4,7 @@ import { FormValuesType } from '..';
 import { Button } from '../../../../shared/Button';
 import { FlexBox } from '../../../../shared/FlexBox';
 import { Input, Label, LabelFile } from '../../../../shared/Form';
+import { Avatar } from '../../../../shared/Avatar';
 
 type UserAvatarType = {
   register: UseFormRegister<FormValuesType>;
@@ -22,7 +23,7 @@ export const UserAvatar: FC<UserAvatarType> = ({ register }): JSX.Element => {
           </LabelFile>
         </Button>
       </FlexBox>
-      <div style={{ width: '87px', height: '87px', background: '#60DABF', borderRadius: '50%' }} />
+      <Avatar>JD</Avatar>
     </FlexBox>
   );
 };
