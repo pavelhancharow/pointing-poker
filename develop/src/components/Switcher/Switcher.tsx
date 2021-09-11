@@ -1,15 +1,15 @@
 import { FC } from 'react';
-import { SwitchWrapp, SwitchInput, SwitchLabel } from './SwitcherStyle';
+import { SwitcherBox } from './style';
 
 type SwitcherProps = {
   onChange: CallableFunction;
 };
 
-export const Switcher: FC<SwitcherProps> = ({ onChange }): JSX.Element => {
+export const Switcher: FC = (): JSX.Element => {
   return (
-    <SwitchWrapp>
-      <SwitchInput id="switcher" type="checkbox" onChange={(e) => onChange(e.target.checked)} />
-      <SwitchLabel htmlFor="switcher" />
-    </SwitchWrapp>
+    <SwitcherBox>
+      <input type="checkbox" />
+      <span className="round" />
+    </SwitcherBox>
   );
 };
