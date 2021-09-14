@@ -19,9 +19,13 @@ type InputType = {
   width?: string;
   height?: string;
   padding?: string;
+  fontFamily?: string;
+  fontSize?: string;
+  lineHeight?: string;
   border?: string;
   borderRightWidth?: string;
   borderRadius?: string;
+  boxShadow?: string;
   opacity?: string;
   visibility?: string;
 };
@@ -30,6 +34,11 @@ export const Input = styled.input<InputType>`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   padding: ${({ padding }) => padding};
+
+  font-family: ${({ fontFamily }) => fontFamily};
+  font-weight: 700;
+  font-size: ${({ fontSize }) => fontSize};
+  line-height: ${({ lineHeight }) => lineHeight};
 
   border: ${({ border }) => border};
   border-right-width: ${({ borderRightWidth }) => borderRightWidth};
@@ -42,6 +51,7 @@ export const Input = styled.input<InputType>`
   &:disabled {
     font-weight: 300;
     text-align: center;
+    color: inherit;
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #eeeeee;
@@ -57,6 +67,9 @@ Input.defaultProps = {
   width: 'auto',
   height: 'auto',
   padding: '0 5px 0 15px',
+  fontFamily: 'Roboto',
+  fontSize: 'inherit',
+  lineHeight: 'inherit',
   border: '1px solid #2b3a67',
   borderRightWidth: '1px',
   borderRadius: '0px 0px 0px 10px',

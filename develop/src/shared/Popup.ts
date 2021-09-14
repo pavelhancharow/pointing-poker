@@ -28,3 +28,10 @@ export const PopUp = styled(FlexBox)`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateY(-50%);
 `;
+
+PopUp.defaultProps = {
+  flexDirection: 'column',
+  width: '876px',
+  margin: '0 auto',
+  padding: '55px 35px 33px'
+};

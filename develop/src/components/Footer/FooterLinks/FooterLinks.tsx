@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import { FooterGitHubIcon, FooterLink, FooterNavDevelopers } from '../style';
+import { FooterGitHubIcon, FooterLink, FooterNavDevelopers } from './style';
 
 export const FooterLinks: FC = (): JSX.Element => {
   return (
-    <FooterNavDevelopers display="flex" justifyContent="space-between" alignItems="center">
+    <FooterNavDevelopers>
       <FooterGitHubIcon />
       <FooterLink href="https://github.com/pavelhancharow" target="_blank">
         pavelhancharow

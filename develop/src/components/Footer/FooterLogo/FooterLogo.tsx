@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FooterLogoCourse, RSSYear } from '../style';
+import { FooterLogoCourse, RSSYear } from './style';
 
 export const FooterLogo: FC = (): JSX.Element => {
   return (

@@ -5,7 +5,7 @@ import { ConnectToLobbyForm } from '../../../components/Form/ConnectToLobby';
 export const Modal: FC = (): JSX.Element => {
   return (
     <PopUpWrap>
-      <PopUp flexDirection="column" width="876px" margin="0 auto" padding="55px 35px 33px">
+      <PopUp>
         <ConnectToLobbyForm />
       </PopUp>
     </PopUpWrap>

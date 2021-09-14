@@ -6,7 +6,7 @@ import { Input } from '../../../shared/Form';
 
 export const LinkConnect: FC = (): JSX.Element => {
   return (
-    <FlexBox display="block" width="inherit">
+    <FlexBox flexDirection="column" width="inherit">
       <BlockTitle marginBottom="31px" textAlign="center">
         OR:
       </BlockTitle>
