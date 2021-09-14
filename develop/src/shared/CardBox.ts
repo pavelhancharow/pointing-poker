@@ -20,8 +20,8 @@ export const CardBox = styled(FlexBox)`
 CardBox.defaultProps = {
   justifyContent: 'space-between',
   alignItems: 'center',
-  width: '500px',
-  height: '120px',
+  width: '300px',
+  height: '76px',
   padding: '18px 21px 19px 22px',
   fontWeight: '700',
   fontSize: '64px',
@@ -51,6 +51,6 @@ export const CardText = styled(FlexBox)`
 CardText.defaultProps = {
   flexDirection: 'column',
   fontWeight: '300',
-  fontSize: '48px',
-  lineHeight: '56px'
+  fontSize: '24px',
+  lineHeight: '30px'
 };
