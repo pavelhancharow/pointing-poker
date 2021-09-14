@@ -23,7 +23,9 @@ export const UserAvatar: FC<UserAvatarType> = ({ register }): JSX.Element => {
           </LabelFile>
         </Button>
       </FlexBox>
-      <Avatar>JD</Avatar>
+      <Avatar width="83px" height="83px" fontSize="48px">
+        JD
+      </Avatar>
     </FlexBox>
   );
 };

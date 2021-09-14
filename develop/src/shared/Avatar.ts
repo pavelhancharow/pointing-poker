@@ -7,6 +7,7 @@ type AvatarType = {
   width?: string;
   height?: string;
   fontSize?: string;
+  lineHeight?: string;
   fontWeight?: string;
   backgroundColor?: string;
   imgSrc?: string;
@@ -15,6 +16,7 @@ type AvatarType = {
 
 export const Avatar = styled(FlexBox)`
   font-size: ${({ fontSize }: AvatarType) => fontSize};
+  line-height: ${({ lineHeight }: AvatarType) => lineHeight};
   font-weight: ${({ fontWeight }: AvatarType) => fontWeight};
   color: #ffffff;
   text-transform: uppercase;
@@ -30,10 +32,11 @@ export const Avatar = styled(FlexBox)`
 Avatar.defaultProps = {
   justifyContent: 'center',
   alignItems: 'center',
-  width: '83px',
-  height: '83px',
-  fontSize: '48px',
+  width: '48px',
+  height: '48px',
   fontWeight: '700',
+  fontSize: '30px',
+  lineHeight: '35px',
   backgroundColor: '#60dabf',
   imgSrc: '',
   boxShadow: 'inset 0 4px 8px rgba(0, 0, 0, 0.2)'

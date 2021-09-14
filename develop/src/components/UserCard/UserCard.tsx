@@ -6,9 +6,7 @@ import { Avatar } from '../../shared/Avatar';
 export const UserCard: FC = () => {
   return (
     <CardBox>
-      <Avatar width="63px" height="63px">
-        RG
-      </Avatar>
+      <Avatar>RG</Avatar>
       <CardText>
         <span className="title">Rick Giligan</span>
         <span className="description">lead software engeneer</span>
