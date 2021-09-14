@@ -35,7 +35,7 @@ export const ConnectToLobbyForm: FC = (): JSX.Element => {
           <Job register={register} />
           <UserAvatar register={register} />
         </FlexBox>
-        <FlexBox display="flex" alignItems="center" justifyContent="space-between" margin="97px 0 0 0">
+        <FlexBox alignItems="center" justifyContent="space-between" margin="97px 0 0 0">
           <Button type="submit">Confirm</Button>
           <Button background="#ffffff" color="#2b3a67">
             Cancel

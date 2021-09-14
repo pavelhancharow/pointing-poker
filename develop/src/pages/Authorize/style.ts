@@ -15,14 +15,15 @@ export const GameLogo = styled.div`
 
 type BlockTitleType = {
   marginBottom?: string;
+  fontSize?: string;
+  lineHeight?: string;
   textAlign?: string;
 };
 
 export const BlockTitle = styled.span<BlockTitleType>`
-  display: block;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: ${({ fontSize }) => fontSize};
+  line-height: ${({ lineHeight }) => lineHeight};
   color: #66999b;
   margin-bottom: ${({ marginBottom }) => marginBottom};
   text-align: ${({ textAlign }) => textAlign};
@@ -30,6 +31,8 @@ export const BlockTitle = styled.span<BlockTitleType>`
 
 BlockTitle.defaultProps = {
   marginBottom: '0',
+  fontSize: '48px',
+  lineHeight: '56px',
   textAlign: 'left'
 };
 
@@ -40,7 +43,6 @@ type DescriptionType = {
 };
 
 export const Description = styled.span<DescriptionType>`
-  display: inline-block;
   margin-bottom: ${({ marginBottom }) => marginBottom};
   line-height: 28px;
   font-weight: ${({ fontWeight }) => fontWeight};

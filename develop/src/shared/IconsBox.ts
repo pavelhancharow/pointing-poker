@@ -31,6 +31,6 @@ export const IconsBox = styled(FlexBox)`
 
 IconsBox.defaultProps = {
   justifyContent: 'space-between',
-  fontSize: '56px',
+  fontSize: '32px',
   color: '#636363'
 };
