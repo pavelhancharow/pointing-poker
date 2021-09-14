@@ -10,7 +10,7 @@ export const Footer: FC = (): JSX.Element => {
   return (
     <FooterBlock>
       <Container>
-        <FlexBox display="flex" alignItems="center">
+        <FlexBox alignItems="center">
           <FooterLinks />
           <FooterLogo />
         </FlexBox>
