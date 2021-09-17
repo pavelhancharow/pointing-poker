@@ -24,6 +24,8 @@ type TimerValueType = {
   left?: string;
   fontSize?: string;
   lineHeight?: string;
+  fontSizeBefore?: string;
+  lineHeightBefore?: string;
 };
 
 export const TimerValue = styled(FlexBox)`
@@ -38,8 +40,8 @@ export const TimerValue = styled(FlexBox)`
     top: ${({ top }: TimerValueType) => top};
     left: ${({ left }: TimerValueType) => left};
     font-family: Ruda;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: ${({ fontSizeBefore }: TimerValueType) => fontSizeBefore};
+    line-height: ${({ lineHeightBefore }: TimerValueType) => lineHeightBefore};
     color: rgba(0, 0, 0, 0.5);
   }
 `;
@@ -53,7 +55,9 @@ TimerValue.defaultProps = {
   width: '49%',
   height: '100%',
   fontSize: '64px',
-  lineHeight: '81px'
+  lineHeight: '81px',
+  fontSizeBefore: '12px',
+  lineHeightBefore: '15px'
 };
 
 type TimerInputType = {
@@ -80,6 +84,6 @@ export const TimerInput = styled.input`
 `;
 
 TimerInput.defaultProps = {
-  width: '75px',
+  width: '100%',
   height: '55px'
 };
