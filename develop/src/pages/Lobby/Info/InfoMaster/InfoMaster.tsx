@@ -7,7 +7,7 @@ export const InfoMaster: FC = (): JSX.Element => {
   return (
     <FlexBox flexDirection="column" margin="0 0 16px 0">
       <MasterTitle>Scram master:</MasterTitle>
-      <UserCard />
+      <UserCard master btn />
     </FlexBox>
   );
 };

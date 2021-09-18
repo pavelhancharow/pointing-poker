@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 type ButtonType = {
+  alignSelf?: string;
   padding?: string;
   color?: string;
   background?: string;
@@ -12,6 +13,7 @@ export const Button = styled.button<ButtonType>`
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: ${({ alignSelf }) => alignSelf};
   padding: ${({ padding }) => padding};
   font-family: 'Ruda', sans-serif;
   font-weight: 700;
@@ -23,6 +25,7 @@ export const Button = styled.button<ButtonType>`
 `;
 
 Button.defaultProps = {
+  alignSelf: 'stretch',
   padding: '7px 30px',
   color: '#ffffff',
   background: '#2b3a67',
