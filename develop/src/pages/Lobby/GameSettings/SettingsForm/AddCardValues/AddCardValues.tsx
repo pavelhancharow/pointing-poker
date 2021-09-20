@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { FlexBox } from '../../../../../shared/FlexBox';
-import { Label } from '../../../../../shared/Form';
+import { Label } from '../../../../../shared/style/Label';
 import { CardValues } from './CardValues';
 
 export const AddCardValues: FC = (): JSX.Element => (

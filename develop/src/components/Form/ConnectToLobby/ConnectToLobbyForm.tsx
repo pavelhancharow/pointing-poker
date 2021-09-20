@@ -5,8 +5,8 @@ import { FirstName } from './FirstName';
 import { LastName } from './LastName';
 import { Job } from './Job';
 import { UserAvatar } from './UserAvatar';
-import { Button } from '../../../shared/Button';
-import { FormTitle } from '../../../shared/Form';
+import { Button } from '../../../shared/style/Button';
+import { FormTitle } from '../../../shared/style/FormTitle';
 import { FlexBox } from '../../../shared/FlexBox';
 
 export type FormValuesType = {
@@ -36,10 +36,10 @@ export const ConnectToLobbyForm: FC = (): JSX.Element => {
           <UserAvatar register={register} />
         </FlexBox>
         <FlexBox alignItems="center" justifyContent="space-between" margin="97px 0 0 0">
-          <Button type="submit">Confirm</Button>
-          <Button background="#ffffff" color="#2b3a67">
-            Cancel
+          <Button type="submit" primary>
+            Confirm
           </Button>
+          <Button>Cancel</Button>
         </FlexBox>
       </form>
     </>

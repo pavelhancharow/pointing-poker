@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 import { FlexBox } from '../../../shared/FlexBox';
-import { FormTitle } from '../../../shared/Form';
-import { Button } from '../../../shared/Button';
+import { FormTitle } from '../../../shared/style/FormTitle';
+import { Button } from '../../../shared/style/Button';
 import { Title } from './Title';
 import { LinkBox } from './Link';
 import { SelectBox } from './Select';
@@ -30,12 +30,10 @@ export const CreateIssueForm: FC = (): JSX.Element => {
           <SelectBox register={register} />
         </FlexBox>
         <FlexBox display="flex" alignItems="center" justifyContent="space-between" margin="97px 0 0 0">
-          <Button type="submit" padding="7px 74px">
+          <Button type="submit" primary>
             Yes
           </Button>
-          <Button background="#ffffff" color="#2b3a67" padding="7px 74px">
-            No
-          </Button>
+          <Button>No</Button>
         </FlexBox>
       </form>
     </>

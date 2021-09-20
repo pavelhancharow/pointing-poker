@@ -2,7 +2,8 @@ import { FC } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import { FormValuesType } from '..';
 import { FlexBox } from '../../../../shared/FlexBox';
-import { Input, Label } from '../../../../shared/Form';
+import { Input } from '../../../../shared/style/Input';
+import { Label } from '../../../../shared/style/Label';
 
 type FirstNameType = {
   register: UseFormRegister<FormValuesType>;
@@ -14,7 +15,7 @@ export const FirstName: FC<FirstNameType> = ({ register }): JSX.Element => {
       <Label htmlFor="name" margin="0 0 9px 0" lineHeight="28px">
         Your first name:
       </Label>
-      <Input id="name" {...register('firstName')} height="47px" width="inherit" />
+      <Input id="name" {...register('firstName')} />
     </FlexBox>
   );
 };

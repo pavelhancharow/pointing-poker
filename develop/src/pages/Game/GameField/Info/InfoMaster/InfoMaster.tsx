@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Button } from '../../../../../shared/Button';
+import { Button } from '../../../../../shared/style/Button';
 import { FlexBox } from '../../../../../shared/FlexBox';
 import { MasterTitle } from '../../../../../shared/Title';
 import { UserCard } from '../../../../../components/UserCard';
@@ -11,9 +11,7 @@ export const InfoMaster: FC = (): JSX.Element => {
         <MasterTitle>Scram master:</MasterTitle>
         <UserCard btn master />
       </FlexBox>
-      <Button alignSelf="end" color="#2B3A67" background="#ffffff">
-        Stop Game
-      </Button>
+      <Button>Stop Game</Button>
     </FlexBox>
   );
 };

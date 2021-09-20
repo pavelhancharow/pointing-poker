@@ -3,7 +3,7 @@ import { UseFormRegister } from 'react-hook-form';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { FormValuesType } from '..';
 import { FlexBox } from '../../../../shared/FlexBox';
-import { Label, Select } from '../../../../shared/Form';
+import { Label, Select } from '../../../../shared/style/Label';
 import { IconWrap, SelectWrap } from './style';
 
 type SelectBoxType = {

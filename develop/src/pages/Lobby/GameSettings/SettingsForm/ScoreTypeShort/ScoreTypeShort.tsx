@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { FlexBox } from '../../../../../shared/FlexBox';
-import { Input, Label } from '../../../../../shared/Form';
+import { Input } from '../../../../../shared/style/Input';
+import { Label } from '../../../../../shared/style/Label';
 
 export const ScoreTypeShort: FC = (): JSX.Element => {
   return (
@@ -8,7 +9,7 @@ export const ScoreTypeShort: FC = (): JSX.Element => {
       <Label htmlFor="scoreTypeShort" fontFamily="Ruda">
         Score type (Short):
       </Label>
-      <Input type="text" id="scoreTypeShort" defaultValue="SP" fontFamily="Ruda" height="36px" />
+      <Input id="scoreTypeShort" defaultValue="SP" small />
     </FlexBox>
   );
 };

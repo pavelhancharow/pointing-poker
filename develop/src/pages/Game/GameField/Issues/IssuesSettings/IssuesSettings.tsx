@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { FlexBox } from '../../../../../shared/FlexBox';
 import { Timer } from '../../../../../components/Timer';
-import { Button } from '../../../../../shared/Button';
+import { Button } from '../../../../../shared/style/Button';
 
 export const IssuesSettings: FC = (): JSX.Element => {
   return (

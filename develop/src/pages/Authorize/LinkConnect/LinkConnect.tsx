@@ -1,8 +1,9 @@
 import { FC } from 'react';
 import { FlexBox } from '../../../shared/FlexBox';
 import { BlockTitle, Description } from '../style';
-import { Button } from '../../../shared/Button';
-import { Input } from '../../../shared/Form';
+import { Button } from '../../../shared/style/Button';
+import { Input } from '../../../shared/style/Input';
+import { Label } from '../../../shared/style/Label';
 
 export const LinkConnect: FC = (): JSX.Element => {
   return (
@@ -18,8 +19,8 @@ export const LinkConnect: FC = (): JSX.Element => {
         :
       </Description>
       <FlexBox width="inherit">
-        <Input type="text" borderRightWidth="0" />
-        <Button borderRadius="0px 3px 3px 0px" padding="7px 74px">
+        <Input forButton type="text" />
+        <Button primary forInput wide>
           Connect
         </Button>
       </FlexBox>

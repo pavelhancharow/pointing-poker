@@ -1,13 +1,13 @@
 import { FC } from 'react';
-import { Button } from '../../../../shared/Button';
+import { Button } from '../../../../shared/style/Button';
 import { FlexBox } from '../../../../shared/FlexBox';
-import { Input } from '../../../../shared/Form';
+import { Input } from '../../../../shared/style/Input';
 
 export const InfoLink: FC = (): JSX.Element => {
   return (
     <FlexBox margin="0 0 30px 0">
-      <Input type="text" disabled defaultValue="http://pockerplanning.c" borderRightWidth="0" />
-      <Button borderRadius="0px 3px 3px 0px" padding="7px 66px">
+      <Input forButton disabled defaultValue="http://pockerplanning.c" />
+      <Button primary forInput>
         Copy
       </Button>
     </FlexBox>
