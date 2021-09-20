@@ -8,5 +8,5 @@ export interface FetchUserAction {
   type: typeof FETCH_USER;
   payload?: never[];
 }
-
+// add new interface
 export type UserAction = FetchUserAction;

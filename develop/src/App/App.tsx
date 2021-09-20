@@ -1,22 +1,14 @@
 import { FC, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { userAction } from '../store/reducer/userReducer';
+import { useDispatch } from 'react-redux';
 import { Header } from '../components/Header';
 import { Main } from '../pages/Main';
 import { Footer } from '../components/Footer';
+import { getUserInfo } from '../store/action-creaters/action-creaters';
 
 export const App: FC = (): JSX.Element => {
   const dispatch = useDispatch();
-  const getDate = async (): Promise<{
-    type: string;
-    payload: never[];
-  }> => {
-    const rensponce = await fetch('https://jsonplaceholder.typicode.com/users/');
-    const data = await rensponce.json();
-    return dispatch(userAction(data));
-  };
   useEffect(() => {
-    getDate();
+    getUserInfo(dispatch);
   });
 
   return (
