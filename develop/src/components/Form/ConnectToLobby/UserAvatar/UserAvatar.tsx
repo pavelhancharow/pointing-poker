@@ -5,7 +5,7 @@ import { Button } from '../../../../shared/style/Button';
 import { FlexBox } from '../../../../shared/FlexBox';
 import { Input } from '../../../../shared/style/Input';
 import { Label, LabelFile } from '../../../../shared/style/Label';
-import { Avatar } from '../../../../shared/Avatar';
+import { Avatar } from '../../../../shared/style/Avatar';
 
 type UserAvatarType = {
   register: UseFormRegister<FormValuesType>;
@@ -24,9 +24,7 @@ export const UserAvatar: FC<UserAvatarType> = ({ register }): JSX.Element => {
           </LabelFile>
         </Button>
       </FlexBox>
-      <Avatar width="83px" height="83px" fontSize="48px">
-        JD
-      </Avatar>
+      <Avatar large>JD</Avatar>
     </FlexBox>
   );
 };

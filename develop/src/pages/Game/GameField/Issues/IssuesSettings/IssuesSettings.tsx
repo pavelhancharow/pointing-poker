@@ -22,7 +22,7 @@ export const IssuesSettings: FC = (): JSX.Element => {
         fontSizeBefore="10px"
         lineHeightBefore="13px"
       />
-      <Button>Run Round</Button>
+      <Button primary>Run Round</Button>
     </FlexBox>
   );
 };
