@@ -6,7 +6,7 @@ import { Label } from '../../../../../shared/style/Label';
 export const ChangeCards: FC = (): JSX.Element => {
   return (
     <FlexBox justifyContent="space-between" alignItems="center">
-      <Label htmlFor="changeCards" fontFamily="Ruda">
+      <Label settingsForm htmlFor="changeCards">
         Changing card in round end:
       </Label>
       <Switcher />

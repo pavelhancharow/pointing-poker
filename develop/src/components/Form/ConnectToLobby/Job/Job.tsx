@@ -12,9 +12,7 @@ type JobType = {
 export const Job: FC<JobType> = ({ register }): JSX.Element => {
   return (
     <FlexBox flexDirection="column" margin="0 0 9px 0">
-      <Label htmlFor="job" margin="0 0 9px 0">
-        Your job position (optional):
-      </Label>
+      <Label htmlFor="job">Your job position (optional):</Label>
       <Input id="job" {...register('job')} />
     </FlexBox>
   );

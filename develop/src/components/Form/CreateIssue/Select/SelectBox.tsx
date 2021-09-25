@@ -13,7 +13,7 @@ type SelectBoxType = {
 export const SelectBox: FC<SelectBoxType> = ({ register }) => {
   return (
     <FlexBox alignItems="center" margin="0 0 47px 0">
-      <Label htmlFor="priority" margin="0 63px 0 0">
+      <Label selectBox htmlFor="priority">
         Priority:
       </Label>
       <SelectWrap width="267px" height="45px">

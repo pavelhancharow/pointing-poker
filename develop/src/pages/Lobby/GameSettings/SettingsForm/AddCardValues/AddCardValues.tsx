@@ -5,7 +5,7 @@ import { CardValues } from './CardValues';
 
 export const AddCardValues: FC = (): JSX.Element => (
   <FlexBox flexDirection="column">
-    <Label htmlFor="addCardValues" fontFamily="Ruda" margin="0 0 30px 0">
+    <Label addCard htmlFor="addCardValues">
       Add card values:
     </Label>
     <CardValues />

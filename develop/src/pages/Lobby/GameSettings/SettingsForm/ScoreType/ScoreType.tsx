@@ -6,7 +6,7 @@ import { Label } from '../../../../../shared/style/Label';
 export const ScoreType: FC = (): JSX.Element => {
   return (
     <FlexBox justifyContent="space-between" alignItems="center">
-      <Label htmlFor="scoreType" fontFamily="Ruda">
+      <Label settingsForm htmlFor="scoreType">
         Score type:
       </Label>
       <Input id="scoreType" defaultValue="story point" small />

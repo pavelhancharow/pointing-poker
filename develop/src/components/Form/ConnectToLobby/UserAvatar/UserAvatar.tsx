@@ -14,7 +14,7 @@ type UserAvatarType = {
 export const UserAvatar: FC<UserAvatarType> = ({ register }): JSX.Element => {
   return (
     <FlexBox flexDirection="column">
-      <Label margin="0 0 9px 0">Image:</Label>
+      <Label>Image:</Label>
       <FlexBox margin="0 0 15px 0">
         <Input disabled placeholder="Choose file" />
         <Button primary forInput>

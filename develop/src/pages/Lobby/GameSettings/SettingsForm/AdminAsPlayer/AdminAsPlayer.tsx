@@ -6,7 +6,7 @@ import { Label } from '../../../../../shared/style/Label';
 export const AdminAsPlayer: FC = (): JSX.Element => {
   return (
     <FlexBox justifyContent="space-between" alignItems="center">
-      <Label htmlFor="adminAsPlayer" fontFamily="Ruda">
+      <Label settingsForm htmlFor="adminAsPlayer">
         Scram master as player:
       </Label>
       <Switcher />

@@ -12,9 +12,7 @@ type LastNameType = {
 export const LastName: FC<LastNameType> = ({ register }): JSX.Element => {
   return (
     <FlexBox flexDirection="column" margin="0 0 20px 0">
-      <Label htmlFor="last" margin="0 0 9px 0">
-        Your last name (optional):
-      </Label>
+      <Label htmlFor="last">Your last name (optional):</Label>
       <Input id="last" {...register('lastName')} />
     </FlexBox>
   );
