@@ -1,25 +1,36 @@
 import styled from 'styled-components';
 
 type LabelType = {
-  margin?: string;
-  fontFamily?: string;
-  fontWeight?: string;
-  lineHeight?: string;
+  selectBox?: boolean;
+  addCard?: boolean;
+  settingsForm?: boolean;
 };
 
 export const Label = styled.label<LabelType>`
-  margin: ${({ margin }) => margin};
-  font-family: ${({ fontFamily }) => fontFamily};
-  font-weight: ${({ fontWeight }) => fontWeight};
-  line-height: ${({ lineHeight }) => lineHeight};
-`;
+  margin: 0 0 9px 0;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: inherit;
 
-Label.defaultProps = {
-  margin: '0',
-  fontFamily: 'Roboto',
-  fontWeight: '700',
-  lineHeight: 'inherit'
-};
+  ${({ selectBox }) =>
+    selectBox &&
+    `
+  margin: 0 63px 0 0;
+  `}
+
+  ${({ addCard }) =>
+    addCard &&
+    `
+  margin: 0 0 30px 0;
+  font-family: 'Ruda';
+  `}
+
+${(settingsForm) =>
+    settingsForm &&
+    `
+  font-amily: 'Ruda';
+  `}
+`;
 
 export const LabelFile = styled.label<LabelType>`
   position: absolute;
