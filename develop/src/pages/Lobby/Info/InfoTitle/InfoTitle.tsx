@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Pen } from '../../../../shared/IconsBox';
+import { Pen } from '../../../../shared/style/IconsBox';
 import { TitleInput } from '../../../../shared/Title';
 import { TitleBox } from './style';
 

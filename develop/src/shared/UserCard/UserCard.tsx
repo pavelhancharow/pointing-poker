@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { IconsBox, Block } from '../../shared/IconsBox';
+import { IconsBox, Block } from '../style/IconsBox';
 import { CardBox, CardText } from '../style/CardBox';
 import { Avatar } from '../style/Avatar';
 

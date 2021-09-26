@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { CardBox, CardText } from '../../../../../../shared/style/CardBox';
-import { Close, IconsBox } from '../../../../../../shared/IconsBox';
+import { Close, IconsBox } from '../../../../../../shared/style/IconsBox';
 
 export const IssuesCard: FC = (): JSX.Element => {
   return (

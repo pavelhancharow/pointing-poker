@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Circle, Pause, Pen } from '../../../../../../shared/IconsBox';
+import { Circle, Pause, Pen } from '../../../../../../shared/style/IconsBox';
 import { ItemsBox } from '../../../../style';
 import { GameCardBox } from './style';
 
