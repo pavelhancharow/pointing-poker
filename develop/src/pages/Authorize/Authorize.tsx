@@ -2,8 +2,9 @@ import { FC } from 'react';
 import { AuthorizeBox, GameLogo } from './style';
 import { NewGame } from './NewGame';
 import { LinkConnect } from './LinkConnect';
-import { Modal } from './Modal';
+import { Modal } from '../../shared/Modal';
 import { FlexBox } from '../../shared/FlexBox';
+import { ConnectToLobbyForm } from '../../components/Form/ConnectToLobby';
 
 export const Authorize: FC = (): JSX.Element => {
   return (
@@ -15,7 +16,7 @@ export const Authorize: FC = (): JSX.Element => {
           <LinkConnect />
         </FlexBox>
       </AuthorizeBox>
-      <Modal />
+      <Modal>{/* <ConnectToLobbyForm /> */}</Modal>
     </>
   );
 };
