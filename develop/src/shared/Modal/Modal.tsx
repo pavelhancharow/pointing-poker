@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { PopUp, PopUpWrap } from '../Popup';
+import { PopUp, PopUpWrap } from '../style/Popup';
 
 type ModalProps = {
   children?: JSX.Element | JSX.Element[];
