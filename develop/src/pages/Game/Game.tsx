@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FlexBox } from '../../shared/FlexBox';
+import { FlexBox } from '../../shared/style/FlexBox';
 import { GameField } from './GameField';
 import { ScoreField } from './ScoreField';
 

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { UserCard } from '../../../../components/UserCard';
+import { UserCard } from '../../../../shared/UserCard';
 import { ItemsBox } from '../../style';
 
 export const Users: FC = (): JSX.Element => {

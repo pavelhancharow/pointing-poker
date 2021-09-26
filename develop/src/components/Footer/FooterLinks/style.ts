@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import git from '../../../assets/image/svg/github.svg';
-import { FlexBox } from '../../../shared/FlexBox';
+import { FlexBox } from '../../../shared/style/FlexBox';
 
 export const FooterNavDevelopers = styled(FlexBox)`
   color: #b6bfc7;

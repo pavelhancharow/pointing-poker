@@ -1,14 +1,15 @@
 import { FC } from 'react';
-import { FlexBox } from '../../../../../shared/FlexBox';
-import { Input, Label } from '../../../../../shared/Form';
+import { FlexBox } from '../../../../../shared/style/FlexBox';
+import { Input } from '../../../../../shared/style/Input';
+import { Label } from '../../../../../shared/style/Label';
 
 export const ScoreType: FC = (): JSX.Element => {
   return (
     <FlexBox justifyContent="space-between" alignItems="center">
-      <Label htmlFor="scoreType" fontFamily="Ruda">
+      <Label settingsForm htmlFor="scoreType">
         Score type:
       </Label>
-      <Input type="text" id="scoreType" defaultValue="story point" fontFamily="Ruda" height="36px" />
+      <Input id="scoreType" defaultValue="story point" small />
     </FlexBox>
   );
 };

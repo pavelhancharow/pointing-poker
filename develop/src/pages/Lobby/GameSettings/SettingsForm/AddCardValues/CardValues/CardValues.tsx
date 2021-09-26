@@ -1,28 +1,28 @@
 import { FC } from 'react';
-import { GameCardBox } from '../../../../../../shared/GameCardBox';
-import { Circle, Pause, Pen } from '../../../../../../shared/IconsBox';
+import { Circle, Pause, Pen } from '../../../../../../shared/style/IconsBox';
 import { ItemsBox } from '../../../../style';
+import { GameCardBox } from './style';
 
 export const CardValues: FC = (): JSX.Element => {
   return (
     <ItemsBox>
-      <GameCardBox content="Unknow" fontSize="70px">
+      <GameCardBox content="Unknow">
         <Pause className="main" />
         <Pen className="edit" />
       </GameCardBox>
-      <GameCardBox content="SP" fontSize="70px">
+      <GameCardBox content="SP">
         12
         <Pen className="edit" />
       </GameCardBox>
-      <GameCardBox content="SP" fontSize="70px">
+      <GameCardBox content="SP">
         1
         <Pen className="edit" />
       </GameCardBox>
-      <GameCardBox content="SP" fontSize="70px">
+      <GameCardBox content="SP">
         13
         <Pen className="edit" />
       </GameCardBox>
-      <GameCardBox fontSize="70px" color="#0000006e">
+      <GameCardBox color="#0000006e">
         <Circle className="main" />
       </GameCardBox>
     </ItemsBox>

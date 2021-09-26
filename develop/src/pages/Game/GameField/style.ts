@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FlexBox } from '../../../shared/FlexBox';
+import { FlexBox } from '../../../shared/style/FlexBox';
 
 export const GameFieldBox = styled(FlexBox)`
   border-right: 1px solid rgba(0, 0, 0, 0.5);

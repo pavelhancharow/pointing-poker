@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FlexBox } from '../../shared/FlexBox';
+import { FlexBox } from '../../shared/style/FlexBox';
 
 export const LobbyBox = styled(FlexBox)`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

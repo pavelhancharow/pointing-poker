@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { BlockTitle, Description } from '../style';
-import { Button } from '../../../shared/Button';
-import { FlexBox } from '../../../shared/FlexBox';
+import { Button } from '../../../shared/style/Button';
+import { FlexBox } from '../../../shared/style/FlexBox';
 
 export const NewGame: FC = (): JSX.Element => {
   return (
@@ -9,7 +9,9 @@ export const NewGame: FC = (): JSX.Element => {
       <BlockTitle marginBottom="66px">Start your planning:</BlockTitle>
       <FlexBox alignItems="center" justifyContent="space-between">
         <Description>Create session:</Description>
-        <Button>Start new game</Button>
+        <Button primary wide>
+          Start new game
+        </Button>
       </FlexBox>
     </FlexBox>
   );

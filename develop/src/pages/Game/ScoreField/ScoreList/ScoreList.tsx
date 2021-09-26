@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 import { ScoreListItem } from './ScoreListItem';
 
 export const ScoreList: FC = (): JSX.Element => {

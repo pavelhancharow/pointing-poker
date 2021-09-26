@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { FlexBox } from '../../../../shared/FlexBox';
-import { Title } from '../../../../shared/Title';
+import { FlexBox } from '../../../../shared/style/FlexBox';
+import { Title } from '../../../../shared/style/Title';
 import { InfoMaster } from './InfoMaster';
 
 export const Info: FC = (): JSX.Element => {

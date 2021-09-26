@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 import { IssuesList } from './IssuesList';
 import { IssuesSettings } from './IssuesSettings';
 

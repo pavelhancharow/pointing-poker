@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 
 export const SelectWrap = styled(FlexBox)`
   position: relative;

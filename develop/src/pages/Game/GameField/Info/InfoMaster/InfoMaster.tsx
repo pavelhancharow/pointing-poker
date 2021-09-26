@@ -1,19 +1,17 @@
 import { FC } from 'react';
-import { Button } from '../../../../../shared/Button';
-import { FlexBox } from '../../../../../shared/FlexBox';
-import { MasterTitle } from '../../../../../shared/Title';
-import { UserCard } from '../../../../../components/UserCard';
+import { Button } from '../../../../../shared/style/Button';
+import { FlexBox } from '../../../../../shared/style/FlexBox';
+import { MasterTitle } from '../../../../../shared/style/Title';
+import { UserCard } from '../../../../../shared/UserCard';
 
 export const InfoMaster: FC = (): JSX.Element => {
   return (
-    <FlexBox justifyContent="space-between">
+    <FlexBox justifyContent="space-between" alignItems="flex-end">
       <FlexBox flexDirection="column">
         <MasterTitle>Scram master:</MasterTitle>
         <UserCard btn master />
       </FlexBox>
-      <Button alignSelf="end" color="#2B3A67" background="#ffffff">
-        Stop Game
-      </Button>
+      <Button>Stop Game</Button>
     </FlexBox>
   );
 };

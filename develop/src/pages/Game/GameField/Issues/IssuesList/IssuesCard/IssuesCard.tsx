@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import { CardBox, CardText } from '../../../../../../shared/CardBox';
-import { Close, IconsBox } from '../../../../../../shared/IconsBox';
+import { CardBox, CardText } from '../../../../../../shared/style/CardBox';
+import { Close, IconsBox } from '../../../../../../shared/style/IconsBox';
 
 export const IssuesCard: FC = (): JSX.Element => {
   return (
-    <CardBox width="250px" height="63px" margin="0 0 22px 0">
-      <CardText fontSize="30px" lineHeight="25px">
+    <CardBox type="issue">
+      <CardText type="issue">
         <span className="title">Issue 13</span>
         <span className="description">Low prority</span>
       </CardText>

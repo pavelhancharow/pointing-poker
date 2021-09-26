@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { SectionBox } from '../style';
-import { Title } from '../../../shared/Title';
+import { Title } from '../../../shared/style/Title';
 import { Users } from './Users';
 
 export const Members: FC = (): JSX.Element => (
