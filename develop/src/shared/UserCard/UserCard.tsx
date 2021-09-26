@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { IconsBox, Block } from '../../shared/IconsBox';
-import { CardBox, CardText } from '../../shared/style/CardBox';
-import { Avatar } from '../../shared/style/Avatar';
+import { CardBox, CardText } from '../style/CardBox';
+import { Avatar } from '../style/Avatar';
 
 type UserCardProps = {
   small?: boolean;
