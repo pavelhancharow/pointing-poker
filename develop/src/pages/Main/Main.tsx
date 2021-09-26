@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import { Container } from '../../shared/Container';
+import { Container } from '../../shared/style/Container';
 import { Authorize } from '../Authorize';
 
 export const Main: FC = (): JSX.Element => {
   return (
     <main>
-      <Container maxWidth="1000px">
+      <Container standard>
         <Authorize />
       </Container>
     </main>

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Container } from '../../shared/Container';
+import { Container } from '../../shared/style/Container';
 import { HeaderBlock, Logo } from './style';
 
 export const Header: FC = (): JSX.Element => {
