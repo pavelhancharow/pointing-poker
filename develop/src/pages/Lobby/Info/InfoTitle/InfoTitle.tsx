@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Pen } from '../../../../shared/style/IconsBox';
-import { TitleInput } from '../../../../shared/Title';
+import { TitleInput } from '../../../../shared/style/Title';
 import { TitleBox } from './style';
 
 export const InfoTitle: FC = (): JSX.Element => {

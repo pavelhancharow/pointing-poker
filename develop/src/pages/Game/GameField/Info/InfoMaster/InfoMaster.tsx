@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Button } from '../../../../../shared/style/Button';
 import { FlexBox } from '../../../../../shared/style/FlexBox';
-import { MasterTitle } from '../../../../../shared/Title';
+import { MasterTitle } from '../../../../../shared/style/Title';
 import { UserCard } from '../../../../../shared/UserCard';
 
 export const InfoMaster: FC = (): JSX.Element => {

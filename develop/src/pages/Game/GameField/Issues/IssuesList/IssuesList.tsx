@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlexBox } from '../../../../../shared/style/FlexBox';
-import { Title } from '../../../../../shared/Title';
+import { Title } from '../../../../../shared/style/Title';
 import { IssuesCard } from './IssuesCard';
 import { IssuesCardCreate } from './IssuesCardCreate';
 
