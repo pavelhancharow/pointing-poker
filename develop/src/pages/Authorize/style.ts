@@ -3,6 +3,8 @@ import gameLogo from '../../assets/image/img/game-logo.png';
 import { FlexBox } from '../../shared/FlexBox';
 
 export const AuthorizeBox = styled(FlexBox)`
+  flex-direction: column;
+  padding: 130px 26px 232px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 

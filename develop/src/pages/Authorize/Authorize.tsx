@@ -9,7 +9,7 @@ import { ConnectToLobbyForm } from '../../components/Form/ConnectToLobby';
 export const Authorize: FC = (): JSX.Element => {
   return (
     <>
-      <AuthorizeBox flexDirection="column" padding="130px 26px 232px">
+      <AuthorizeBox>
         <GameLogo />
         <FlexBox flexDirection="column" width="515px">
           <NewGame />
