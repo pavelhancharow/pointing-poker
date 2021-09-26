@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { Observer } from './Observer';
 import { FirstName } from './FirstName';
@@ -43,9 +44,9 @@ export const ConnectToLobbyForm: FC = (): JSX.Element => {
           <UserAvatar register={register} />
         </FlexBox>
         <FlexBox alignItems="center" justifyContent="space-between" margin="97px 0 0 0">
-          <Button onClick={() => setModalState(dispatch, isModalState)} type="submit">
-            Confirm
-          </Button>
+          <NavLink to="/lobby">
+            <Button type="submit">Confirm</Button>
+          </NavLink>
           <Button onClick={() => setModalState(dispatch, isModalState)} background="#ffffff" color="#2b3a67">
             Cancel
           </Button>
