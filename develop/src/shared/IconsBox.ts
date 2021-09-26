@@ -8,7 +8,7 @@ import {
   FreeBreakfast as Pause,
   ControlPoint as Circle
 } from '@material-ui/icons';
-import { FlexBox } from './FlexBox';
+import { FlexBox } from './style/FlexBox';
 
 export { Pen, Add, Delete, Close, Block, Pause, Circle };
 

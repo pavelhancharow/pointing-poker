@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FlexBox } from '../../../../../shared/FlexBox';
+import { FlexBox } from '../../../../../shared/style/FlexBox';
 import { Timer } from '../../../../../components/Timer';
 import { Button } from '../../../../../shared/style/Button';
 

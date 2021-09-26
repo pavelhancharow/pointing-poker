@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { UserCard } from '../../../../../shared/UserCard';
-import { FlexBox } from '../../../../../shared/FlexBox';
+import { FlexBox } from '../../../../../shared/style/FlexBox';
 import { ScoreProgressCard } from './ScoreProgressCard';
 
 export const ScoreListItem: FC = (): JSX.Element => {

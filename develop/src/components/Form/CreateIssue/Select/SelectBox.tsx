@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { FormValuesType } from '..';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 import { Label, Select } from '../../../../shared/style/Label';
 import { IconWrap, SelectWrap } from './style';
 

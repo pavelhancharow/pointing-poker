@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import { FormValuesType } from '..';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 import { Input } from '../../../../shared/style/Input';
 import { Label } from '../../../../shared/style/Label';
 

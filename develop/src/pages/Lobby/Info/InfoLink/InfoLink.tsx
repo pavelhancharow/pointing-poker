@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Button } from '../../../../shared/style/Button';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 import { Input } from '../../../../shared/style/Input';
 
 export const InfoLink: FC = (): JSX.Element => {

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Timer } from '../../../../../components/Timer';
-import { FlexBox } from '../../../../../shared/FlexBox';
+import { FlexBox } from '../../../../../shared/style/FlexBox';
 import { Label } from '../../../../../shared/style/Label';
 
 export const RoundTime: FC = (): JSX.Element => {

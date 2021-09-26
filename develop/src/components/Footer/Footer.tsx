@@ -4,7 +4,7 @@ import { FooterBlock } from './style';
 import { FooterLinks } from './FooterLinks';
 import { FooterLogo } from './FooterLogo';
 import { Container } from '../../shared/style/Container';
-import { FlexBox } from '../../shared/FlexBox';
+import { FlexBox } from '../../shared/style/FlexBox';
 
 export const Footer: FC = (): JSX.Element => {
   return (

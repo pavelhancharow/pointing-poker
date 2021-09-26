@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import { FlexBox } from '../FlexBox';
+import { FlexBox } from './FlexBox';
 
 type AvatarProps = {
   small?: boolean;

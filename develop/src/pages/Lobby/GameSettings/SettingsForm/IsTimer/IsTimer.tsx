@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Switcher } from '../../../../../components/Switcher';
-import { FlexBox } from '../../../../../shared/FlexBox';
+import { FlexBox } from '../../../../../shared/style/FlexBox';
 import { Label } from '../../../../../shared/style/Label';
 
 export const IsTimer: FC = (): JSX.Element => {

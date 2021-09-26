@@ -7,7 +7,7 @@ import { Job } from './Job';
 import { UserAvatar } from './UserAvatar';
 import { Button } from '../../../shared/style/Button';
 import { FormTitle } from '../../../shared/style/FormTitle';
-import { FlexBox } from '../../../shared/FlexBox';
+import { FlexBox } from '../../../shared/style/FlexBox';
 
 export type FormValuesType = {
   firstName: string;

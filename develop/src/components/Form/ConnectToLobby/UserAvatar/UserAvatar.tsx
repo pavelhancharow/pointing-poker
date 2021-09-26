@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 import { FormValuesType } from '..';
 import { Button } from '../../../../shared/style/Button';
-import { FlexBox } from '../../../../shared/FlexBox';
+import { FlexBox } from '../../../../shared/style/FlexBox';
 import { Input } from '../../../../shared/style/Input';
 import { Label, LabelFile } from '../../../../shared/style/Label';
 import { Avatar } from '../../../../shared/style/Avatar';

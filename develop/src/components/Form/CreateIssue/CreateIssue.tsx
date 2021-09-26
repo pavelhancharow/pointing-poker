@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
-import { FlexBox } from '../../../shared/FlexBox';
+import { FlexBox } from '../../../shared/style/FlexBox';
 import { FormTitle } from '../../../shared/style/FormTitle';
 import { Button } from '../../../shared/style/Button';
 import { Title } from './Title';

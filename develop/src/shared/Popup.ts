@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FlexBox } from './FlexBox';
+import { FlexBox } from './style/FlexBox';
 
 type PopUpWrapType = {
   display?: string;

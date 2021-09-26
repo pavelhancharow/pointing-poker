@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FlexBox } from '../../../shared/FlexBox';
+import { FlexBox } from '../../../shared/style/FlexBox';
 import { FormTitle } from '../../../shared/style/FormTitle';
 import { Button } from '../../../shared/style/Button';
 import { Text } from './style';
